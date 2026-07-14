@@ -41,7 +41,7 @@ for (const vo of str) {
 }
 
 // Write a program to reverse a string using for...of.
-const rever = ["Lahore"];
+const rever = ["Lahore", "Pattoki", "Karachi"];
 let reverse = "";
 for (const char of rever) {
   reverse = char + reverse;
