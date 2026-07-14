@@ -57,3 +57,9 @@ for (const value of numberarr) {
   avg = sum1 / numberarr.length;
   document.getElementById("dis6").innerText = avg;
 }
+
+// Write a program to print each character of a string using for...of.
+const stringarr = ["Murtaza"];
+for (const char of stringarr) {
+  document.getElementById("dis7").innerText += char;
+}
