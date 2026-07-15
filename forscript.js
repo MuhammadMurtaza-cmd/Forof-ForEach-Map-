@@ -30,3 +30,48 @@ fortharr.forEach((item) => {
     document.getElementById("dis3").innerText += item;
   }
 });
+
+// Write a program to find the smallest number in an array using forEach().
+
+const fivtharr = [12, 44, 22, 87, 45, 5];
+let smallval = fivtharr[0];
+fivtharr.forEach((ele) => {
+  if (ele < smallval) {
+    smallval = ele;
+  }
+});
+document.getElementById("dis4").innerText = smallval;
+
+// Write a program to convert all strings in an array to uppercase using forEach().
+
+const sixtharr = ["hello", "world"];
+sixtharr.forEach((elem) => {
+  ab = elem.toUpperCase();
+  document.getElementById("dis5").innerText += ab;
+});
+
+// Write a program to calculate the total marks of students using forEach().
+
+const marks = {
+  eng: 60,
+  urdu: 85,
+  maths: 78,
+};
+tmarks = 0;
+Object.values(marks).forEach((element) => {
+  tmarks += element;
+});
+document.getElementById("dis6").innerText = tmarks;
+
+// Write a program to display student details stored in an array of objects using forEach().
+
+const detailarr = [
+  { name: "Murtaza", age: 19, student: "BSCS", semester: "2nd" },
+  { name: "Shahzad", age: 26, student: "HND", semester: "8th" },
+  { name: "Abdullah", age: 24, student: "BBIT", semester: "5th" },
+];
+
+detailarr.forEach((detail) => {
+  document.getElementById("dis7").innerHTML +=
+    `Student name: ${detail.name}----Age:${detail.age}-----Student:${detail.student}-----Semester:${detail.semester}</br>`;
+});
