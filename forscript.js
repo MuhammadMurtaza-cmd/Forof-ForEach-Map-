@@ -75,3 +75,15 @@ detailarr.forEach((detail) => {
   document.getElementById("dis7").innerHTML +=
     `Student name: ${detail.name}----Age:${detail.age}-----Student:${detail.student}-----Semester:${detail.semester}</br>`;
 });
+
+// Use forEach() to count even and odd numbers in an array.
+
+const arr = [12, 6, 8, 3, 34, 33, 7];
+// let spac = " ";
+arr.forEach((value) => {
+  if (value % 2 == 0) {
+    document.getElementById("dis8").innerText += value + "--";
+  } else {
+    document.getElementById("dis9").innerText += value + "--";
+  }
+});

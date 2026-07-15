@@ -63,3 +63,13 @@ const stringarr = ["Murtaza"];
 for (const char of stringarr) {
   document.getElementById("dis7").innerText += char;
 }
+
+// Use for...of to find the largest number in an array.
+const largarr = [23, 12, 54, 75, 234, 98];
+let largval = largarr[0];
+for (const value of largarr) {
+  if (value > largval) {
+    largval = value;
+  }
+}
+document.getElementById("dis8").innerText = largval;
